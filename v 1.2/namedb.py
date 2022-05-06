@@ -52,14 +52,6 @@ def prefix(type: str, prefix: str):
     print('Not a good type'); return None
   return list
 
-def clearprefix(prefix: str):
-  for file in listdir('namedb'):
-    if file.startswith(prefix): remove(convert.convert(file))
-  return True
-
-async def aclearprefix(prefix: str):
-  return clearprefix(prefix)
-
 async def asearch(valuename: str):
   return search(valuename)
 
