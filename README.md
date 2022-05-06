@@ -1,5 +1,17 @@
 # select the version you want
 every big changes between every version will be here
+# 1.3 to 1.4
+clearcacheprefix now exist<br />
+async method of search replaced by exist<br />
+editing the cache (restore deleted data)<br />
+remove now only cache the data if the cache is true (false by default)<br />
+edit now only create the value if the create is true and the data doesn't exist<br />
+example:
+```py
+import namedb
+namedb.restore('money')
+namedb.clearcache()
+```
 # 1.2 to 1.3
 clearprefix exist<br /><br />
 async method of remove replaced by delete
