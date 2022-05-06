@@ -7,7 +7,6 @@ def get(valuename: str):
   if f'{valuename}.json' not in listdir('namedb'): return None
   with open(f'namedb/{valuename}.json', 'r') as f:
     data = load(f)
-  if valuename not in data: return None
   v = data['value']
   return v
 
@@ -15,7 +14,7 @@ def add(valuename: str, value: any):
   if f'{valuename}.json' in listdir('namedb'): print('value already exist'); return False
   with open(f'namedb/{valuename}.json', 'w') as fp:
     fp.write('{}')
-  data = {}; data[valuename] = value
+  data = {}; data['value'] = value
   with open(f'namedb/{valuename}.json', 'w') as fp:
     dump(data, fp, indent=1)
   return True
@@ -36,14 +35,14 @@ def remove(valuename: str):
   if f'{valuename}.json' in listdir('namedb/old'): delet(f'namedb/old/{valuename}.json')
   with open(f'namedb/old/{valuename}.json', 'w') as fp:
     fp.write('{}')
-  data = {}; data[valuename] = value
+  data = {}; data['value'] = value
   with open(f'namedb/old/{valuename}.json', 'w') as fp:
     dump(data, fp, indent=1)
   return True
 
 def restore(valuename: str):
   if f'{valuename}.json' not in listdir('namedb/old'): return None
-  with open(f'namedb/old/{valuename}.json', 'w') as fp:
+  with open(f'namedb/old/{valuename}.json', 'r') as fp:
     data = load(fp)
   value = data['value']; delet(f'namedb/old/{valuename}.json'); add(valuename, value)
   return value
