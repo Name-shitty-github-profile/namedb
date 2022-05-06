@@ -106,9 +106,11 @@ install setup.py and run it (answers the questions)<br />
 Directory path (example : C:/windows/desktop/my/project/) : C:/windows/Users/Me/Pycharm/project/
 ```
 # migrating from version 1.3
+clearcacheprefix now exist<br />
 async method of search replaced by exist<br />
 editing the cache (restore deleted data)<br />
 remove now only cache the data if the cache is true (false by default)<br />
+edit now only create the value if the create is true and the data doesn't exist<br />
 example:
 ```py
 import namedb
