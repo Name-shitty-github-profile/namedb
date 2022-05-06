@@ -73,7 +73,7 @@ async def aedit(valuename: str, value: str):
   return edit(valuename, value)
 
 async def aremove(valuename: str):
-  return add(valuename)
+  return remove(valuename)
 
 async def atransferjson(jsondata):
   return transferjson(jsondata)
