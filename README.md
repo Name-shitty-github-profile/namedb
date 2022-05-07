@@ -1,5 +1,15 @@
 # select the version you want
 every big changes between every version will be here
+# 1.4 to 1.5
+error handling now exist<br>
+example:
+```py
+import namedb
+try:
+  namedb.get('A world without any taxes')
+except namedb.ValueNotExist:
+  print("damn it")
+```
 # 1.3 to 1.4
 clearcacheprefix now exist<br />
 async method of search replaced by exist<br />
