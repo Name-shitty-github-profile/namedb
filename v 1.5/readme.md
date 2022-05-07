@@ -169,7 +169,7 @@ install setup.py and run it (answers the questions)<br />
 Directory path (example : C:/windows/desktop/my/project/) : C:/windows/Users/Me/Pycharm/project/
 ```
 # migrating from version 1.4
-error handling now exist
+error handling now exist<br>
 example:
 ```py
 import namedb
