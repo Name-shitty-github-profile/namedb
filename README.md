@@ -1,6 +1,14 @@
 # select the version you want
 Check the branches
 <br>Lastest version : 1.5
+# 1.5 to 1.6
+Category now exist
+example:
+```py
+import namedb
+namedb.createcat('example')
+namedb.add('example', 'working', 'example')
+```
 # 1.4 to 1.5
 error handling now exist<br>
 example:
