@@ -1,6 +1,6 @@
 # select the version you want
 Check the branches
-<br>Lastest version : 1.5
+<br>Lastest version : 1.6
 # 1.5 to 1.6
 Category now exist
 example:
