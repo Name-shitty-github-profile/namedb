@@ -25,15 +25,6 @@ var = namedb.search('price')
 if var:
   print('Give me your money!')
 ```
-error handling<br />
-exemple : 
-```py
-import namedb
-try:
-  namedb.search('a world without taxes')
-except namedb.ValueNotExist:
-  print('Damn it')
-```
 # add (aadd)
 parameters : ValueName(str), Value(Any), Category(optional(str))<br />
 if worked it will return True else False<br />
