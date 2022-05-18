@@ -1,5 +1,5 @@
 from os import path, mkdir
-directory = input('Directory path (example : C:/windows/desktop/my/project/) : '); path = path.join(directory, 'namedb'); mkdir(path); path = path.replace('namedb', 'package'); mkdir(path); path = ''; path.join(directory, 'namedb/old'); mkdir(path)
+path = path.join('.', 'namedb'); mkdir(path); path = path.replace('namedb', 'package'); mkdir(path); path = ''; path.join('.', 'namedb/old'); mkdir(path)
 code = """
 from os import listdir; from json import load, dump; from os import remove as delet; from package import convert
 class ValueAlreadyExist(Exception):
