@@ -8,10 +8,10 @@ class CategoryAlreadyExist(Exception):
 class CategoryDoesNotExist(Exception):
   pass
 def search(valuename: str, categorie: str = None):
-  if f'{valuename}.json' not in listdir(f'namedb{"" if not categorie else f"/{categorie}"}'): raise ValueNotExist('value does not exist')
+  if f'{valuename}.json' not in listdir(f'namedb{"" if not categorie else f"/{categorie}"}'): return False
   return True
 async def exist(valuename: str, categorie: str = None):
-  if f'{valuename}.json' not in listdir(f'namedb{"" if not categorie else f"/{categorie}"}'): raise ValueNotExist('value does not exist')
+  if f'{valuename}.json' not in listdir(f'namedb{"" if not categorie else f"/{categorie}"}'): return False
   return True
 def get(valuename: str, categorie: str = None):
   if f'{valuename}.json' not in listdir(f'namedb{"" if not categorie else f"/{categorie}"}'): raise ValueNotExist('Value does not exist')
