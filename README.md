@@ -1,6 +1,14 @@
 # select the version you want
 Check the branches
-<br>Lastest version : 1.6
+<br>Lastest version : 1.7
+# 1.6 to 1..7
+multi-tasking now exist <br>
+example:
+```py
+import namedb
+namedb.remove('taxes||bad things')
+```
+edit has been updated a lot
 # 1.5 to 1.6
 Category now exist
 example:
