@@ -1,6 +1,9 @@
 # select the version you want
 Check the branches
-<br>Lastest version : 1.7
+<br>Lastest version : 1.8
+# 1.7 to 1.8
+Big fix make the database work faster<br>
+No visible changes
 # 1.6 to 1..7
 multi-tasking now exist <br>
 example:
